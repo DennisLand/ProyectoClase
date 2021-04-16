@@ -7,10 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.Dayana.DAO.clsUsuarios;
-import com.Dayana.Entidades.Login;
+
 import com.Dayana.Negocio.clsLogin;
-import com.Dayana.Entidades.Usuario;
+import com.Dayana.Entidades.*;
 
 /**
  * Servlet implementation class ControllerAcceso

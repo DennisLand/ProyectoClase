@@ -1,7 +1,6 @@
 package com.Dayana.Negocio;
 
-import com.Dayana.Entidades.Login;
-import com.Dayana.Entidades.Usuario;
+import com.Dayana.Entidades.*;
 import com.Dayana.DAO.*;
 
 public class clsLogin {
