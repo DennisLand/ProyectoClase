@@ -1,4 +1,4 @@
-package com.Dayana.Controladores;
+package com.Dennis.Controladores;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,21 +7,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-import com.Dayana.Negocio.clsLogin;
-import com.Dayana.Entidades.*;
+import com.Dennis.Conexion.ConexionBD;
 
 /**
- * Servlet implementation class ControllerAcceso
+ * Servlet implementation class ControllerBd
  */
-@WebServlet("/ControllerAcceso")
-public class ControllerAcceso extends HttpServlet {
+@WebServlet("/ControllerBd")
+public class ControllerBD extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ControllerAcceso() {
+    public ControllerBD() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,31 +37,10 @@ public class ControllerAcceso extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
+		doGet(request, response);
 		
-		String user = request.getParameter("user");
-		String pass = request.getParameter("pass");
-		
-		Usuario log = new Usuario();
-		clsLogin clsL = new clsLogin();
-
-		log.setUsuario(user);
-		log.setPass(pass);
-
-		int valoracceso = clsL.acceso(log);
-
-		if (valoracceso == 1) {
-			//Este es un usuario Administrador
-			System.out.println("> Ha iniciado como Administrador.");
-			response.sendRedirect("Administrador.jsp");
-		} else if (valoracceso == 2) {
-			//Este es un usuario normal
-			System.out.println("> Ha iniciado como Usuario.");
-			response.sendRedirect("Usuario.jsp");
-		} else {
-			System.out.println("> Error.");
-			response.sendRedirect("Error.jsp");
-		}
+		ConexionBD con = new ConexionBD();
+		con.RetornarConexion();
 	}
 
 }

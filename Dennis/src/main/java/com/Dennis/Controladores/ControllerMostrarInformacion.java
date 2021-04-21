@@ -1,4 +1,4 @@
-package com.Dayana.Controladores;
+package com.Dennis.Controladores;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.Dayana.DAO.clsUsuarios;
-import com.Dayana.Entidades.Usuario;
+import com.Dennis.DAO.clsUsuarios;
+import com.Dennis.Entidades.Usuario;
 import com.google.gson.Gson;
 
 /**

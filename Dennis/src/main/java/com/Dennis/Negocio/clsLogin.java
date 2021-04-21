@@ -1,7 +1,7 @@
-package com.Dayana.Negocio;
+package com.Dennis.Negocio;
 
-import com.Dayana.Entidades.*;
-import com.Dayana.DAO.*;
+import com.Dennis.DAO.*;
+import com.Dennis.Entidades.*;
 
 public class clsLogin {
 

@@ -1,4 +1,4 @@
-package com.Dayana.Entidades;
+package com.Dennis.Entidades;
 
 public class Login {
 

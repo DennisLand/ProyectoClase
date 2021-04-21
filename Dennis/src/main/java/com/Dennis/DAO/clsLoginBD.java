@@ -1,11 +1,11 @@
-package com.Dayana.DAO;
+package com.Dennis.DAO;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
-import com.Dayana.Conexion.ConexionBD;
-import com.Dayana.Entidades.Usuario;
+import com.Dennis.Conexion.ConexionBD;
+import com.Dennis.Entidades.Usuario;
 
 public class clsLoginBD {
 	ConexionBD conexion = new ConexionBD();

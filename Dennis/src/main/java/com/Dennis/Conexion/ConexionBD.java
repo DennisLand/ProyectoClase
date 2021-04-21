@@ -1,4 +1,4 @@
-package com.Dayana.Conexion;
+package com.Dennis.Conexion;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
